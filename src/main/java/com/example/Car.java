@@ -13,6 +13,7 @@ public class Car {
     private String company;
     private String model;
     private Integer year;
+    private String engine;
 
     public String getId() {
         return id;
@@ -44,5 +45,13 @@ public class Car {
 
     public void setYear(Integer year) {
         this.year = year;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
     }
 }
