@@ -13,17 +13,17 @@ import java.util.List;
 public class CarController {
 
     @Autowired
-    private CarRepository carRepository;
+    private CarRepository repository;
 
     @RequestMapping(path = "/cars", method = RequestMethod.GET)
     public List<Car> all() {
-        return carRepository.findAll();
+        return repository.findAll();
     }
 
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     public void add(@RequestBody Car car) {
-        carRepository.save(car);
+        repository.save(car);
     }
 
 }
