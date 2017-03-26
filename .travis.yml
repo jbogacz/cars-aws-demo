@@ -1,17 +1,9 @@
-os:
-  - linux
-language: java
-jdk:
-  - oraclejdk8
-script:
-  - ./mvnw clean package
-  - ./mvnw
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIYIYBVGD5AUPEDMA
   secret_access_key:
     secure: "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"
   region: "us-east-1"
-  app: "cars
+  app: "cars"
   env: "cloud"
   bucket_name: "cars-bucket"
