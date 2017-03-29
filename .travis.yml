@@ -7,9 +7,9 @@ script:
 #  ./mvnw clean package -DskipTests
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIJFF5CIWAOFFYPMQ
+  access_key_id: *
   secret_access_key:
-    secure: 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
+    secure: *
   region: eu-west-1
   app: cars-aws-demo
   env: dev
