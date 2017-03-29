@@ -55,5 +55,23 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>cloud</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+						<configuration>
+							<profiles>
+								<profile>cloud</profile>
+							</profiles>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>

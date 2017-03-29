@@ -1,9 +1,9 @@
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIYIYBVGD5AUPEDMA
+  access_key_id: AKIAIJFF5CIWAOFFYPMQ
   secret_access_key:
-    secure: "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"
-  region: "us-east-1"
-  app: "cars"
-  env: "cloud"
-  bucket_name: "cars-bucket"
+    secure: 004AIv9MY/9UZLqJ3wMBjECBvTpofFt1hx/MaToq
+  region: eu-west-1
+  app: cars-aws-demo
+  env: dev
+  bucket_name: elasticbeanstalk-eu-west-1-680513014599
