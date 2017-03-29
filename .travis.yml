@@ -14,3 +14,6 @@ deploy:
   app: cars-aws-demo
   env: dev
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
+  on:
+    repo: https://github.com/jbogacz/cars-aws-demo.git
+    branch: master
