@@ -4,7 +4,7 @@ language: java
 jdk:
   oraclejdk8
 script:
-  ./mvnw clean package
+  ./mvnw clean package -DskipTests
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIJFF5CIWAOFFYPMQ
@@ -13,7 +13,7 @@ deploy:
   region: eu-west-1
   app: cars-aws-demo
   env: dev
-  bucket_name: elasticbeanstalk-eu-west-1-680513014599
+  bucket_name: cars-aws-demo-backet
   on:
-    repo: https://github.com/jbogacz/cars-aws-demo.git
-    branch: master
+    repo: cars-aws-demo/repo
+    branch: dev
