@@ -11,7 +11,7 @@ deploy:
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
-    repo: jbogacz/cars
+    repo: jbogacz/cars-aws-demo
   bucket: elasticbeanstalk-eu-west-1-680513014599
 - provider: codedeploy
   access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
