@@ -11,17 +11,17 @@ deploy:
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
-    repo: jbogacz/cars-aws-demo
+    repo: jbogacz/cars
   bucket: elasticbeanstalk-eu-west-1-680513014599
 - provider: codedeploy
   access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
   secret_access_key: *1
   bucket: elasticbeanstalk-eu-west-1-680513014599
-  key: cars-aws-demo
+  key: cars
   bundle_type: ''
-  application: cars-aws-demo
+  application: cars
   deployment_group: travis
   on: *2
 before_deploy:
-#- mkdir -p dpl_cd_upload
-#- mv cars-aws-demo dpl_cd_upload/cars-aws-demo
+- mkdir -p dpl_cd_upload
+- mv cars dpl_cd_upload/cars
