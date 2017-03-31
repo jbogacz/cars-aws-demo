@@ -24,4 +24,4 @@ deploy:
   on: *2
 before_deploy:
 - mkdir -p dpl_cd_upload
-- mv cars dpl_cd_upload/cars
+- mv cars-aws-demo dpl_cd_upload/cars
