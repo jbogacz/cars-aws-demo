@@ -1,6 +1,7 @@
 language: java
 jdk: oraclejdk8
-script: 
+script:
+- ./mvnd -DskipTests
 notifications:
   email: jakub.bogacz@jeesoft.pl
 deploy:
