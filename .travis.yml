@@ -22,7 +22,7 @@ deploy:
     region: eu-west-1
     bucket: elasticbeanstalk-eu-west-1-680513014599
     key: cars-aws-demo
-    bundle_type: 'jar'
+    bundle_type: 'zip'
     application: cars-aws-demo
     deployment_group: travis-deployment-group
     on: *2
