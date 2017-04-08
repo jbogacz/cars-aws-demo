@@ -24,7 +24,7 @@ deploy:
     key: cars-aws-demo
     bundle_type: 'jar'
     application: cars-aws-demo
-    deployment_group: travis
+    deployment_group: travis-deployment-group
     on: *2
 
 before_deploy:
