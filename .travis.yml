@@ -15,12 +15,12 @@ deploy:
     skip_cleanup: true
     on: &2
       repo: jbogacz/cars-aws-demo
-    bucket: elasticbeanstalk-eu-west-1-680513014599
+    bucket: cars-aws-demo
   - provider: codedeploy
     access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
     secret_access_key: *1
     region: eu-west-1
-    bucket: elasticbeanstalk-eu-west-1-680513014599
+    bucket: cars-aws-demo
     key: cars-aws-demo
     bundle_type: 'zip'
     application: cars-aws-demo
