@@ -1,6 +1,7 @@
 language: java
 jdk: oraclejdk8
 script:
+#- ./mvnw -DskipTests
 notifications:
   email: jakub.bogacz@jeesoft.pl
 
@@ -15,6 +16,16 @@ deploy:
     on: &2
       repo: jbogacz/cars-aws-demo
     bucket: cars-aws-demo
+  - provider: codedeploy
+    access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
+    secret_access_key: *1
+    region: eu-west-1
+    bucket: cars-aws-demo
+    key: cars-aws-demo
+    bundle_type: 'zip'
+    application: cars-aws-demo
+    deployment_group: travis-deployment-group
+    on: *2
   - provider: elasticbeanstalk
     access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
     secret_access_key: *1
