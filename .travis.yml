@@ -3,6 +3,10 @@ jdk: oraclejdk8
 script: 
 notifications:
   email: jakub.bogacz@jeesoft.pl
+before_deploy:
+- mkdir -p dpl_cd_upload
+- ls -ltr target
+- cp target/cars-0.0.1-SNAPSHOT.jar dpl_cd_upload/cars-0.0.1-SNAPSHOT.jar
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
@@ -16,7 +20,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: jbogacz/cars-aws-demo
-#before_deploy:
-#- mkdir -p dpl_cd_upload
-#- ls -ltr target
-#- cp target/cars-0.0.1-SNAPSHOT.jar dpl_cd_upload/cars-0.0.1-SNAPSHOT.jar
