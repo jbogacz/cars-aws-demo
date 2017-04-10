@@ -15,6 +15,7 @@ public class CarController {
     @Autowired
     private CarRepository repository;
 
+
     @RequestMapping(path = "/cars", method = RequestMethod.GET)
     public List<Car> all() {
         return repository.findAll();
