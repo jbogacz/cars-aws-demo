@@ -1,6 +1,6 @@
 language: java
 jdk: oraclejdk8
-script:
+script: 
 notifications:
   email: jakub.bogacz@jeesoft.pl
 deploy:
@@ -12,6 +12,8 @@ deploy:
   app: cars
   env: Custom-env
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
+  on:
+    repo: jbogacz/cars-aws-demo
 before_deploy:
 - mkdir -p dpl_cd_upload
 - ls -ltr target
