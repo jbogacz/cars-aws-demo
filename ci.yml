@@ -26,13 +26,6 @@ deploy:
     application: cars-aws-demo
     deployment_group: travis-deployment-group
     on: *2
-  - provider: elasticbeanstalk
-    access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
-    secret_access_key: *1
-    region: eu-west-1
-    app: cars-aws-demo
-      env: Custom-env
-      bucket_name: cars-aws-demo
 
 before_deploy:
 - mkdir -p dpl_cd_upload
