@@ -20,8 +20,8 @@ deploy:
     secret_access_key: *1
     region: eu-west-1
     app: cars-aws-demo
-      env: Custom-env
-      bucket_name: cars-aws-demo
+    env: Custom-env
+    bucket_name: cars-aws-demo
 
 before_deploy:
 - mkdir -p dpl_cd_upload
