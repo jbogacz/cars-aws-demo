@@ -10,6 +10,6 @@ deploy:
   secret_access_key: &1
     secure: c7T/2xKWw1sfRJQLRQBeSkkZ3qQB5cY0IEdlUrHzv5P9Rr9jvESHNOklzbeaYJ/dZP8GgSLR72sPKZAFq91vAIIQHSQGC2ggLvuZSD1ziJ0pfmSqwaJ2r7iVgZ5XOczuHvoi8RSGxN/6LA6tKnOU4zfoGAeGhkf+AasXrpmsxeo3lgvYKZrLwI6uLXSUIPHvxjwJy8bv2jerbAe4kQz0jLlBqF56GMulMjft9+MU7TFmbkalCeO4+LZ8EqEqJAx158fx4f/1dO2FzjpMCbTRSXuzk+J4t4q91wIL+vCjQ/XHGlE05bVU+bOqIgTudt6+bzOpJ8k6C1WiXApBSFJEYElU4z03JuHLFRnBgKfsRFm2vexyyF22XVchNb/Bla0UrHmg2jXoFce4BMg+Cf31+Y5fw8LQevs7l+09uOIQqa/pMljxyP7+EOXoTVj19EUfV3m6131YtzQQSiAYRHPiddDvV9caH3dhbThcFj76MhnOdsWq1U1o4aAhIrlV9/QMq09rRiEh9RUsFSyiaA+0dCjILZEgPNS7yE4xu2FOmCKpXlPe4nD8lkDdlI8dA/cpBBc63+KCtxNFcS2ewb2K280YQCtz4PIWWF1w0Q+WFbCSwoJyOmwb+ZyXpcHuaa1kohIAI1/Tg8e76FAXR2a36n3B+c1MetguUJTgaPMtGjM=
   region: eu-west-1
-  app: cars-aws-demo
+  app: cars
   env: Custom-env
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
