@@ -15,7 +15,7 @@ public class CarController {
     @Autowired
     private CarRepository repository;
 
-    @RequestMapping(path = "/cars2", method = RequestMethod.GET)
+    @RequestMapping(path = "/cars", method = RequestMethod.GET)
     public List<Car> all() {
         return repository.findAll();
     }
@@ -24,6 +24,12 @@ public class CarController {
     @ResponseStatus(value = HttpStatus.OK)
     public void add(@RequestBody Car car) {
         repository.save(car);
+    }
+
+    @RequestMapping(path = "/health", method = RequestMethod.GET, produces = "application/text")
+    @ResponseStatus(value = HttpStatus.OK)
+    public String health() {
+        return "OK";
     }
 
 }
