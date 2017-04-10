@@ -13,6 +13,7 @@ deploy:
   env: Custom-env
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
   zip_file: dupa.zip
+  skip_cleanup: true
   on:
     repo: jbogacz/cars-aws-demo
 #before_deploy:
