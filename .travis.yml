@@ -12,9 +12,10 @@ deploy:
   app: cars
   env: Custom-env
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
+  zip_file: dupa.zip
   on:
     repo: jbogacz/cars-aws-demo
-before_deploy:
-- mkdir -p dpl_cd_upload
-- ls -ltr target
-- cp target/cars-0.0.1-SNAPSHOT.jar dpl_cd_upload/cars-0.0.1-SNAPSHOT.jar
+#before_deploy:
+#- mkdir -p dpl_cd_upload
+#- ls -ltr target
+#- cp target/cars-0.0.1-SNAPSHOT.jar dpl_cd_upload/cars-0.0.1-SNAPSHOT.jar
