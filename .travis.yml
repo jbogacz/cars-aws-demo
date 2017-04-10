@@ -3,7 +3,6 @@ jdk: oraclejdk8
 script:
 notifications:
   email: jakub.bogacz@jeesoft.pl
-
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAIX3ETOT6Z3PO3ZAQ
