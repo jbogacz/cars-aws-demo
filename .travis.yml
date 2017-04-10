@@ -12,7 +12,7 @@ deploy:
   app: cars
   env: Custom-env
   bucket_name: elasticbeanstalk-eu-west-1-680513014599
-  zip_file: dupa.zip
+  zip_file: cars-0.0.1-SNAPSHOT.jar
   skip_cleanup: true
   on:
     repo: jbogacz/cars-aws-demo
